@@ -37,12 +37,12 @@
 // -----------------------------------------------------------------------------------------
 // | ESC  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // |      | VOL-| VOL+| MUTE| PL/P|     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |BTCLR| BT1 | BT2 | BT3 | BT4 |   | NXT | PRV |     |     |     |      |
+// | SHFT |	    |     | PREV| NEXT|     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp ESC     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6     &kp N7     &kp N8 &kp N9    &kp N0 &kp BSPC
    &trans      &kp K_VOL_DN &kp K_VOL_UP &kp K_MUTE	  &kp K_PP	   &trans         &kp LEFT   &kp DOWN   &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT   &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp K_NEXT &kp K_PREV &trans &trans    &trans &trans
+   &kp LSHFT   &trans		&trans		 &kp PREV     &kp NEXT	   &trans         &trans	 &trans 	&trans &trans    &trans &trans
                           	      	     &kp LGUI     &trans       &kp SPACE      &kp RET    &mo 3 &kp RALT
                         >;
                 };
@@ -67,12 +67,12 @@
 // -----------------------------------------------------------------------------------------
 // | ATAB |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 |  F10| BKSP |
 // | CTRL |     |  	  |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |  	  |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | SHFT |BTCLR| BT1 | BT2 | BT3 | BT4 |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp LA(TAB)	&kp LG(LS(F1))  &kp LG(LS(F2)) &kp LG(LS(F3))   &kp LG(LS(F4))   &kp LG(LS(F5)) &kp LG(LS(F6))		&kp LG(LS(F7))   &kp LG(LS(F8))		&kp LG(LS(F9))		&kp LG(LS(F10)) &kp BSPC
    &kp LCTRL	&trans			&trans			&trans			&trans			&trans			&kp LG(LS(LEFT))	&kp LC(LA(DOWN)) &kp LC(LA(UP))		&kp LG(LS(RIGHT))	&trans			&trans 
-   &kp LSHFT	&trans			&trans			&trans			&trans			&trans			&trans				&trans		  		&trans			&trans			&trans			&trans
+   &kp LSHFT	&bt BT_CLR		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&trans				&trans		  	&trans				&trans				&trans			&trans
                     	     &kp LGUI &trans   &kp SPACE &kp RET   &trans    &kp RALT
                         >;
                 };
