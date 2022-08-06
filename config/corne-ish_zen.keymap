@@ -31,7 +31,7 @@
                         label = "NUMBER";
                         bindings = <
    &trans					&kp PG_UP				&kp HOME				&kp UP					&kp END					&kp LC(LA(UP))			&kp LS(LA(LC(UP)))		&kp N7					&kp N8					&kp N9					&kp N0					&trans
-   &trans					&kp A					&kp S					&kp D					&kp F					&kp	LC(LA(DOWN))		&kp LS(LA(LC(DOWN)))	&kp N4					&kp N5					&kp N6					&kp SQT					&trans
+   &trans					&kp PG_DN				&kp LEFT				&kp DOWN				&kp RIGHT				&kp	LC(LA(DOWN))		&kp LS(LA(LC(DOWN)))	&kp N4					&kp N5					&kp N6					&kp SQT					&trans
    &trans					&trans					&kp K_VOL_DOWN			&kp K_PP				&kp K_VOL_UP			&kp LS(LG(UP))			&kp LS(LG(DOWN))		&kp N1					&kp N2					&kp N3					&kp BSLH				&trans
 						   													&trans					&trans					&trans					&trans					&mo 3					&trans
                         >;
@@ -52,9 +52,9 @@
                 adjst_layer {
                         label = "ADJUST";
                         bindings = <
-   &trans					&trans					&trans					&trans					&trans					&trans					&trans					&kp LS(LF(F7))			&kp LS(LF(F8))			&kp LS(LF(F9))			&kp LS(LF(F10))			&trans
-   &trans					&trans					&trans					&trans					&trans					&trans					&trans					&kp LS(LF(F4))			&kp LS(LF(F5))			&kp LS(LF(F6))			&kp LS(LF(F11))			&trans
-   &trans					&bt BT_CLR				&bt BT_SEL 0			&bt BT_SEL 1			&bt BT_SEL 2			&bt BT_SEL 3			&trans					&kp LS(LF(F1))			&kp LS(LF(F2))			&kp LS(LF(F3))			&kp LS(LF(F12))			&trans
+   &trans					&trans					&trans					&trans					&trans					&trans					&trans					&kp LS(LG(F7))			&kp LS(LG(F8))			&kp LS(LG(F9))			&kp LS(LG(F10))			&trans
+   &trans					&trans					&trans					&trans					&trans					&trans					&trans					&kp LS(LG(F4))			&kp LS(LG(F5))			&kp LS(LG(F6))			&kp LS(LG(F11))			&trans
+   &trans					&bt BT_CLR				&bt BT_SEL 0			&bt BT_SEL 1			&bt BT_SEL 2			&bt BT_SEL 3			&trans					&kp LS(LG(F1))			&kp LS(LG(F2))			&kp LS(LG(F3))			&kp LS(LG(F12))			&trans
 						   													&trans					&trans					&trans					&trans					&trans					&trans
                         >;
                 };
